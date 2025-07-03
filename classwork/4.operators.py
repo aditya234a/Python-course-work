@@ -67,3 +67,30 @@ print(a > 10 and b < 20)
 print(a > 10 or b<20)
 
 print(not(a>10))
+
+# 5.Membership Operators
+
+d = {
+    'name':'tarak',
+    'age':40,
+
+    'name':'arjun',
+    'age':41
+
+}
+print(type(d))                                                       #<class 'dict'>
+print('tarak' not in d)                                              #True
+print('name' in d)                                                   #True
+
+fav_movies = ["Darling","Temper","Businessman","Badri"]
+print('Darling' not in fav_movies)                                   #False
+print('Badri' in fav_movies)                                         #True
+print(type(fav_movies))                                              #<class 'list'>
+
+# 5.Identity Operators
+
+k=[1,2,5,4]
+l=[1,2,5,4]
+print("IS:", k is l)            #False
+print("IS NOT:", k is not l)    #True
+
