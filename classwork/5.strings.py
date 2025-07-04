@@ -38,8 +38,9 @@ print("sorted : ", sorted(m))       #sorted :  [' ', 'L', 'a', 'b', 'e', 'f', 'g
 print("character : ", chr(97))      #character :  a
 print("Order : ", ord(' '))         #Order :  32
 
+# String Methods
 
-# 3.Case Conversion Methods
+# 1.Case Conversion Methods
 
 #1.upper()
 #2.lower()
@@ -53,4 +54,17 @@ print("upper('A') : ", c.upper())                  #upper() :  I CAN IMPROVE MY 
 print("lower('a') : ", c.lower())                  #lower() :  i can improve my self
 print("capitalize(Ab cd) : ", c.capitalize())      #capitalize() :  I can improve my self
 print("title(Ab Cd) : ", c.title())                #title() :  I Can Improve My Self
-print("swapcase(A-a, a-A) : ", c.swapcase())       #swapcase() :  I CAN IMPROVE My self
+print("swapcase(A-a, a-A) : ")                     #swapcase() :  I CAN IMPROVE My self
+
+# 3.Search & Find Methods
+
+f="adityaMandala"
+print("find : ", f.find('a'))           #find :  0
+print("rfind : ", f.rfind('a'))         #rfind :  12
+print("find : ", f.find('x'))           #find :  -1
+
+#print("index : ", f.index('x'))        #error
+
+print("index : ", f.index('d'))         #index :  1
+print("rindex : ", f.rindex('d'))       #rindex :  9
+print("count : ", f.count('a'))         #count :  5
