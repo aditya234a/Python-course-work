@@ -87,10 +87,22 @@ print('Darling' not in fav_movies)                                   #False
 print('Badri' in fav_movies)                                         #True
 print(type(fav_movies))                                              #<class 'list'>
 
-# 5.Identity Operators
+# 6.Identity Operators
 
 k=[1,2,5,4]
 l=[1,2,5,4]
 print("IS:", k is l)            #False
 print("IS NOT:", k is not l)    #True
+
+# 7.Bitwise Operators
+
+x=4                                 #Binary= 0 1 0 0
+y=6                                 #Binary= 0 1 1 0
+                                             
+print("AND(&):", x&y)               # 0 1 0 0 = 4
+print("OR(|):", x|y)                # 0 1 1 0 = 6
+print("XOR(^):", x^y)               # 0 0 1 0 = 2       Opposite reactions can be True
+print("NOT(~):", ~x)                #  [~n = -(n + 1)]
+print("NOT(~):", ~y)                #  [~n = -(n + 1)]
+
 
