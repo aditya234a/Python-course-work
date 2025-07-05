@@ -68,3 +68,60 @@ print("find : ", f.find('x'))           #find :  -1
 print("index : ", f.index('d'))         #index :  1
 print("rindex : ", f.rindex('d'))       #rindex :  9
 print("count : ", f.count('a'))         #count :  5
+
+#4.String Tesing Mothods (Boolean Results )
+
+g='Manikanta12324'
+print("startswith(sub) : ", f.startswith('d'))          #startswith(sub) :  False
+print("startswith(sub) : ", f.startswith('a'))          #startswith(sub) :  True
+print("endswith(sub) : ", f.endswith('d'))              #endswith(sub) :  False
+print("endswith(sub) : ", f.endswith('a'))              #endswith(sub) :  True
+print("isspace : ", f.isspace())                        #isspace :  False
+print("isalpha : ", f.isalpha())                        #isalpha :  True
+print("isalpha : ", g.isalpha())                        #isalpha :  False
+print("isalnum : ", g.isalnum())                        #isalnum :  True
+print("isupper : ", f.isupper())                        #isupper :  False
+print("islower : ", f.islower())                        #islower :  False
+print("istitle : ", f.istitle())                        #istitle :  False
+print("isidentifier : ", f.isidentifier())              #isidentifier :  True
+print("istitle : ", g.istitle())                        #istitle :  True
+
+print("         isdecimal()  ")
+print("isdecimal() : ", '123'.isdecimal())            #isdecimal() :  True
+print("isdecimal() : ", '123.67'.isdecimal())         #isdecimal() :  False
+print("isdecimal() : ", '12abc3'.isdecimal())         #isdecimal() :  False
+print("isdecimal() : ", 'Ⅷ'.isdecimal())            #isdecimal() :  False
+print("isdecimal() : ", '٣'.isdecimal())              #isdecimal() :  True
+print("isdecimal() : ", '²'.isdecimal())              #isdecimal() :  False
+print("isdecimal() : ", '⅓'.isdecimal())              #isdecimal() :  False
+print("isdecimal() : ", '五'.isdecimal())             #isdecimal() :  False
+
+print("         isdigit()  ")
+print("isdigit() : ", '123'.isdigit())              #isdigit() :  True
+print("isdigit() : ", '123.67'.isdigit())           #isdigit() :  False
+print("isdigit() : ", '12abc3'.isdigit())           #isdigit() :  False
+print("isdigit() : ", 'Ⅷ'.isdigit())              #isdigit() :  False
+print("isdigit() : ", '٣'.isdigit())                #isdigit() :  True
+print("isdigit() : ", '²'.isdigit())                #isdigit() :  True
+print("isdigit() : ", '⅓'.isdigit())                #isdigit() :  False
+print("isdigit() : ", '五'.isdigit())               #isdigit() :  False
+
+print("         isnumeric()  ")
+print("isnumeric() : ", '123'.isnumeric())          #isnumeric() :  True
+print("isnumeric() : ", '123.67'.isnumeric())       #isnumeric() :  False
+print("isnumeric() : ", '12abc3'.isnumeric())       #isnumeric() :  False
+print("isnumeric() : ", 'Ⅷ'.isnumeric())          #isnumeric() :  True
+print("isnumeric() : ", '٣'.isnumeric())            #isnumeric() :  True
+print("isnumeric() : ", '²'.isnumeric())            #isnumeric() :  True
+print("isnumeric() : ", '⅓'.isnumeric())            #isnumeric() :  True
+print("isnumeric() : ", '五'.isnumeric())           #isnumeric() :  True
+
+#5.Replace & Modify Methods
+
+print("replace(old,new) : ", f.replace('a', '@'))
+print("replace(old,new) : ", f.replace('ad', '@%'))
+print("maketrans() : ", f.maketrans('a', '@'))
+print(ord('a'))
+print(ord('@'))
+print("translate(table) : ", f.translate('str'.maketrans('a', '@')))
+print("translate(table) : ", f.translate('str'.maketrans('ad','@%')))
