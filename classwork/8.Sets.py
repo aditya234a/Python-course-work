@@ -73,6 +73,7 @@ print(set3.isdisjoint(set4))
 s = {1,2,3,4,5,6,7,8,9}
 s1 = {3,4,5,6,7,8,9}
 s2 = {4,5,4,6,7,8,9}
+s3 = {4,3,5,8,7,6}
 
 s.add(12)
 print(s)
@@ -91,6 +92,9 @@ print(s)
 
 s1.union(s2)
 print(s1)
+
+s2.intersection(s3)
+print(s2)
 
 #  5. Built-in Functions for Sets
 
