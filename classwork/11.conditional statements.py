@@ -1,6 +1,8 @@
 
 #  1. if - condition statement
 
+print("Traffic Signals".center(50,"*"))
+
 s = input("enter the status(R O G):")
 
 if s=='R':
@@ -13,6 +15,8 @@ if s=='G':
 
 
  # 2. else - condition statement
+
+print("Welcome To Amazon Store".center(50,"*"))
 
 items = ['shoes','smartwatch','bags','phone','airpods','toycar']
 
@@ -27,6 +31,8 @@ else:
 
 
 # weekend budget plan 
+
+print("Bubget Plan".center(50,"*"))
 
 amount = int(input("enter the amountyou can spend for weekend:"))
 
@@ -48,6 +54,8 @@ else:
 
 
 #  Grading System
+
+print("Student Grade".center(100,"*"))
 
 data = {
     1:{'name':'praveen','attempt_status':False,'python':0,'sql':0,'powerbi':0},
