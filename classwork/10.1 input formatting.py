@@ -48,6 +48,6 @@
 #print(student)
 
 print("Multiple Inputs with Unpacking".center(75," "))
-username,password = input("Enter your username and password : ").split()
+username,password = input("Enter your username and password:").split()
 print("username:",username)
 print("password:",password)
