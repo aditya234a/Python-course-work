@@ -108,7 +108,7 @@ for row in range(n):
     for col in range(row+1):
         print('*',end=' ')
     print()
-    '''
+    
 for row in range(8):
     for col in range(row +1):
         print('*',end = " ")
@@ -119,3 +119,58 @@ for row in range(9):
     print()
 
 
+n = int(input("enter the value:"))
+for row in range(n):
+    if row<n/2:
+        for col in range (row+1):
+            print("*",end = " ")
+        print()
+    else:
+        for col1 in range(n - row):
+            print("*",end = " ")
+        print()
+
+
+n = int(input("enter the number:"))
+
+for row in range(n):
+    if row<5:
+        for spa in range(n-row-1):
+            print(' ',end=' ')
+        print()
+    else:
+        for col in range (n-1):
+
+            for spa in range(col-1 ):
+
+                print('*',end=' ')
+            print()
+            '''
+
+n = int(input("enter the value:"))
+
+for row in range(n):
+    for spa in range(row):
+        print(' ',end = ' ')
+    for col in range(n-row):
+        print("*",end=" ")
+    print()
+
+
+
+
+
+
+
+
+
+
+
+'''
+    for row in range(n):
+    for spa in range(n-row-1):
+        print(' ',end=' ')
+    for col in range(row+1):
+        print('*',end=' ')
+    print()
+    '''
