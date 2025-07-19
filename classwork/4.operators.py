@@ -46,7 +46,7 @@ c-=2
 print("Subtract & Assign(-=):",c)                     #Subtract & Assign(-=): 6
 
 c*=4
-print("Multiple & Assign(=):",c)                      #Multiple & Assign(=): 24
+print("Multiple & Assign(*=):",c)                      #Multiple & Assign(=): 24
 
 c/=2
 print("Divide & Assign(/=):",c)                       #Divide & Assign(/=): 12.0

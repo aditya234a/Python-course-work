@@ -18,7 +18,7 @@ print("Indexing : ", s1[6])                       # Indexing :
 s="Iam Aditya Icompleted BTech in 2025 at KIET"
 print("Membership : ", "completed" in s)                 # Membership :  True
 print("Membership : ", "2025" in s)                      # Membership :  True
-print("Membership : ", "Aditya" not in s)                # Membership :  True
+print("Membership : ", "Aditya" not in s)                # Membership :  False
 print("Membership : ", "mandala" in s)                   # Membership :  False
 
 

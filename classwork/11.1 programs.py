@@ -149,7 +149,7 @@ else:
     print("strings are not equal")
 '''
 a = int(input("enter the number:"))
-if a*1==0 :
+if a%2==1 or a*2==1 :
     print("its a prime number")
 else:
     print("its not a prime number")
