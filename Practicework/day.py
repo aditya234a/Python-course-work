@@ -239,7 +239,6 @@ row==0 or row==n-1 or row==n//2 or (col==0 and row<=n//2) or (col==n-1 and row>=
 row==0 or row==n//2 or col==0 or col==n-1:  # A
 
 col==0
-'''
 
 n = int(input("enter the size:"))                                 
 for row in range(n):                                              
@@ -249,3 +248,23 @@ for row in range(n):
         else:
             print(" ",end="")
     print()
+    
+
+
+a = input("enter the name:")
+print("hello", a ,sep=",",end="! ")
+
+
+b = int(input("enter the name:"))
+print("you entered:", b)
+
+c = float(input("enter the value:"))
+print("value of pi:",c,sep="")
+
+d = list(map(int,input("enter the values:").split()))
+e = (sum(d))
+print("sum of inputs:",e)
+'''
+f = input("name and age:")
+name,age= f.split(",")
+print("Name:",name,",Age:",age,sep="")
