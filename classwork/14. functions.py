@@ -40,4 +40,4 @@ while True:
     elif op==4:
         history()
     else:
-        print("Invaild choice.Try Again")        
+        print("Invaild choice. Try Again")        
