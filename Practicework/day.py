@@ -264,7 +264,12 @@ print("value of pi:",c,sep="")
 d = list(map(int,input("enter the values:").split()))
 e = (sum(d))
 print("sum of inputs:",e)
-'''
+
 f = input("name and age:")
 name,age= f.split(",")
 print("Name:",name,",Age:",age,sep="")
+'''
+
+words = ['apple','banana','cat']
+lengths = list(map(lambda x: len(x), words))
+print(lengths)
