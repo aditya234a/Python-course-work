@@ -33,7 +33,7 @@ def addnumbers(n):
     return n%10 + addnumbers(n//10)
 n = int(input("enter the numbers:"))
 print("add the two numbers:",addnumbers(n))
-'''
+
 
 def countnumbers(n):
     if n<10:
@@ -41,3 +41,28 @@ def countnumbers(n):
     return 1 + countnumbers(n//10)
 n = int(input("enter the numbers:"))
 print("count the numbers:",countnumbers(n))
+
+
+
+import operator as opr
+
+a = int(input("enter the a:"))
+b = int(input("enter the b:"))
+
+option = input("enter the option(+-*/%**):")
+
+if option=='+':
+    opr.add(a,b)
+elif option=='-':
+    opr.sub(a,b)
+    
+
+
+
+import platform
+
+print(platform.system())
+print(platform.release())
+print(platform.processor())
+'''
+
