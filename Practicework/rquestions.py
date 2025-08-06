@@ -66,3 +66,8 @@ print(platform.release())
 print(platform.processor())
 '''
 
+import sys
+
+#print(sys.argv)
+#print(sys.path)
+print(sys.version)
