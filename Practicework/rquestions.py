@@ -64,10 +64,88 @@ import platform
 print(platform.system())
 print(platform.release())
 print(platform.processor())
-'''
+
 
 import sys
 
 #print(sys.argv)
 #print(sys.path)
 print(sys.version)
+
+
+
+class instagram:
+    def __init__(self,username,password):
+        print("welcome to the instagram")
+        self.bio=''
+        self.post=[]
+        self.followers={}
+        self.following={}
+        self.username=username
+        self.password=password
+        print(f"Hello {self.username} login successfull")
+
+manikanta= instagram("manikanta","mani@123!")
+
+
+
+class instagram:
+    def __init__(self,username,password):
+        print("welcome to the instagram")
+        self._bio=''
+        self.post=[]
+        self.followers=[]
+        self.following=[]
+        self.username=username
+        self.__password=password
+        print(f"Hello {self.username} login successfull")
+
+
+    @property
+    def externalbio(self):
+        return self._bio
+
+    @externalbio.setter
+    def externalbio(self,upd_bio):
+        self._bio=upd_bio
+
+    def showPassword(self):
+        return self.__password
+    def updatePassword(self,new_pwd):
+        self.__password=new_pwd
+manikanta=instagram("manikanta","mani@1234!")
+
+#public var-accessing
+print("Bio:",manikanta._bio)
+print("Post:",manikanta.post)
+print("Followers:",manikanta.followers)
+print("Following:",manikanta.following)
+print("Username:",manikanta.username)
+
+#modifying - public var
+manikanta._bio="Peace"
+manikanta.post.append("Python-course.png")
+manikanta.followers.extend(["Peace","kiran"])
+manikanta.following.extend(["ntr","virat"])
+manikanta.username='manikanta_.'
+
+print("\nAfter updating: ")
+print("Bio:",manikanta._bio)
+print("Post:",manikanta.post)
+print("Followers:",manikanta.followers)
+print("Following:",manikanta.following)
+print("Username:",manikanta.username)
+
+#private var-accessing
+print("\nPassword :",manikanta.showPassword())
+print("updated password:",manikanta.updatePassword("mani@12"))
+'''
+
+class Login:
+    def __init__(self,username,paasword):
+        self.username=username
+        self.__password=password
+
+
+  
+
